@@ -1,0 +1,214 @@
+create table Hospitals(
+id int primary key identity(1,1),
+h_name varchar(100) not null,
+h_type varchar(100) not null,
+h_area varchar(100) not null,
+h_city varchar(100) not null,
+h_address varchar(200) not null,
+mobileNumber varchar(50) not null,
+h_email varchar(100) not null
+)
+
+
+create table Banks(
+id int primary key identity(1,1),
+bank_name varchar(100) not null,
+branch_name varchar(100) not null,
+ifsc_code varchar(100) not null,
+bank_city varchar(100) not null,
+bank_address varchar(200) not null,
+mobileNumber varchar(50) not null,
+bank_emailId varchar(100) not null,
+available_time varchar(50) not null)
+
+
+create table Restaurants(
+id int primary key identity(1,1),
+r_name varchar(100) not null,
+r_type varchar(100) not null,
+r_area varchar(100) not null,
+r_city varchar(100) not null,
+r_rating varchar(100) not null,
+r_address varchar(200) not null,
+mobileNumber varchar(50) not null,
+available_time varchar(50) not null)
+
+
+create table Grocery_Stores(
+id int primary key identity(1,1),
+g_name varchar(100) not null,
+g_area varchar(100) not null,
+g_city varchar(100) not null,
+g_rating varchar(100) not null,
+g_address varchar(200) not null,
+mobileNumber varchar(50) not null,
+available_time varchar(50) not null)
+
+create table Fuel_Station(
+id int primary key identity(1,1),
+f_name varchar(100) not null,
+f_area varchar(100) not null,
+f_city varchar(100) not null,
+f_address varchar(200) not null,
+mobileNumber varchar(50) not null)
+
+
+create table Weather_Forecast(
+id int primary key identity(1,1),
+w_pincode varchar(50) not null,
+w_area varchar(100)  not null,
+w_city varchar(100) not null,
+w_state varchar(100) not null,
+day varchar(50) not null,
+degree_celsius varchar(50) not null,
+humidity varchar(50) not null)
+
+
+--------------------------------------------------------
+
+insert into Hospitals(h_name,h_type,h_area,h_city,h_address,mobileNumber,h_email)
+values('Kamineni Hospital','Multi Speciality Hospital','Tadigadapa','Vijayawada','100Feet New Autonagar Rd,Main Rd,Vijayawada,AP-521137','8662463333','kaminenihospital@gmail.com'),
+('Dr.MJ Naidu Hospital','Super Speciality Hospital','Suryaraopeta','Vijayawada','33-18-15,Pushpahotel Rd,Suryaraopeta,Vijayawada,AP-520002','7947303696','mjnaiduhospital@gmail.com'),
+('Rainbow Hospital','ChildCare Hospital','Currency Nagar','Vijayawada','48-10-12/2A Service Rd,Beside Aahar Fourt Court,Currency Nagar,Vijayawada,AP-520008','8002122444','rainbowhospital@gmail.com'),
+('Anu Hospital','General Hospital','Suryaraopeta','Vijayawada','New Giri Puram,Suryarao Peta,Vijayawada,AP-5200010','866243881','anuhospital@gmail.com'),
+('Andhra Hospital','Private Hospital','Governorpeta','Vijayawada','14,C.V.R Complex-29,61,Sheshadri Sastry St,Near Delphi Auto Works,Vijayawada,AP-520002','9998881234','andhrahospital@gmail.com'),
+('Dr.Manyam Venkata Rathnam Hospital','ENT Speciality Hospital','NakkalRoad','Vijayawada','29-12-36 Venkatarathnam Nakkal Rd,Vijayawada,AP-520002','6512345678','manyamhospital@gmail.com'),
+('Prashanth Hospital','Multi Speciality Hospital','Velachery','Chennai','36&36A Velachery road,Chennai,TN-600042','9380998099','prashanthhospital@gmail.com'),
+('Apollo Hospital','Heart Speciality Hospital','Thousand Lights West','Chennai','No15 Shafee Mohammed Rd,Thousand Lights,Chennai,TN-600006','8005004916','apollothhospital@gmail.com'),
+('Institute of Child Care and Hospital for Childern','ChildCare Hospital','Egmore','Chennai','Bhanumati,Rina Mandal Rd,Egmore,Chennai,TN-600008','4428192138','institutehospital@gmail.com'),
+('Fortis Malar Hospital','General Hospital','Gandhi Nagar','Chennai','No52,1st Main Rd,Gandhi Nagar,Adyar,Chennai,TN-600020','9962599933','fortishhospital@gmail.com'),
+('Dr.Mehta Hospital','Private Hospital','Chetpet','Chennai','No2,MC Nichols Rd,Chetpet,Chennai,TN-600031','4442271001','mehtahospital@gmail.com'),
+('KKR Hospital','ENT Speciality Hospital','Kilpauk','Chennai','No274,Poonamalle High Rd,Opp KMC Hospital,Kilpauk,Chennai,TN-600010','4426411444','kkrhospital@gmail.com'),
+('Cura Hospital','Multi Speciality Hospital','Uttarahalli Hobli','Bangalore','No18,Kanakapura Rd,Venkatareddy Layout,Industrial Area,Doddakallsandra,Uttarahalli Hobli,Bangalore-560062','8431241400','curahospital@gmail.com'),
+('Motherhood Hospital','Maternity Hospital','Kalyan Nagar','Bangalore','914,5th A-Cross Rd,Hrbr Layout,1st Block,Kalyan Nagar,Bangalore-560043','8067238855','motherhoodhospital@gmail.com'),
+('Vijaya Hospital','ChildCare Hospital','Vidyaranyapura','Bangalore','831,8th Main Rd,BEL Layout 5th Block,Vidyaranyapura,Bangalore-560097','9148536565','vijayahospital@gmail.com'),
+('Columbia Asia Hospital','General Hospital','Ramagondanahalli','Bangalore','No-10P&12P White Field Main Rd,Varthur Kodi,Ramagondanahalli,Bangalore-560066','8061656666','coumbiahospital@gmail.com'),
+('Kauvery Hospital','Private Hospital','Electronic City','Bangalore','No-92/1B,HP Avenue,Konappana Agrahara Village,Begur hubli,Bangalore-560100','8068016801','kauveryhospital@gmail.com'),
+('Dr.Bathi Reddy Hospital','ENT Speciality Hospital','Kodihalli','Bangalore','#98/1st Floor,HAL Old Airport Rd,Kodihalli,Bangalore-560017','8789965432','bathireddyhospital@gmail.com')
+
+-----------------------------------------------
+
+insert into Fuel_Station(f_name,f_area,f_city,f_address,mobileNumber)
+values('Chennapati Petrol Bunk','Labbipet','Vijayawada','40-1-6A,MG Road,Opposite PVP Mall,Sidhartha Nagar,Vijayawada,AP-520010','9321437890'),
+('Indian Oil Petrol Bunk','Mogalrajpuram','Vijayawada','32-2-1012,Beside MK Mandapam,Vijayawada,AP-520010','9848022339'),
+('LPG Gas Petrol Bunk','Ayodhya Nagar','Vijayawada','4-12A,Lotus Landmark,Vijayawada,AP-520003','8712378901'),
+('HP Petrol Bunk','Singh Nagar','Vijayawada','42-26-1,Water Tank Road,Dabakottlu Center,Vijayawada,AP-520015','7981234568'),
+('Sri Surya Filling Station','Governor Peta','Vijayawada','30-22-82,Eluru Road,Seetharampuram,Vijayawada,AP-520002','8662436436'),
+('Bharat Petroleum Bunk','Chuttugunta','Vijayawada','26-2-19,Eluru Road,Maruthi Nagar,Vijayawada,AP-520004','1800222725'),
+('Kumaran Servuce Station HP Petrol Pump','Chetpet','Chennai','Poonamalle High Rd,Dasspuram,Chennai,TN-600031','4428362135'),
+('Bharat Petroleum Fuel Station','Gopalapuram','Chennai','Avvai Shanmugam Salai,Chennai,TN-600086','1800323897'),
+('HP Petrol Pump','Pallavaram','Chennai','116,HPC Dealers,6b,200 Feet Radial Rd,Veeramani,Chennai,TN-600117','9841165367'),
+('BP Fuel Station','Perambur','Chennai','Papermills Rd,Peravallur,Kolathur,SRP Colony,Chennai,TN-600082','8341897890'),
+('Sunder Service Station','Nungambakkam','Chennai','97,Kodambakkam High Rd,Thousand Lights West,Chennai,TN-600034','7123567890'),
+('Indian Oil Petrol Bunk','Red Hills','Chennai','GNT Rd,Red Hills,Chennai,TN-600052','1800456789'),
+('Sanjana Fuel Station','Industrial Area','Bangalore','28,Hoodi Main Rd,KEB Colony,Bengaluru-560048','1800567891'),
+('SVM Fuel Station','Prestige Tech Park','Bangalore','27,Marthahalli Outer Ring,Kadubeesanahalli,Varthur Hobli,Bengaluru-560103','9845734444'),
+('Pushpa Fuel Station','Electronic City','Bangalore','63,2B,Hosur Rd,Kammasandra,Bengaluru-560100','9483723078'),
+('Keerthi Service Station','Old Madras Rd','Bangalore','20,Old Madras Rd,Bengaluru-560049','9448288006'),
+('HP Petrol Pump','Yeshwanthpur','Bangalore','HP Dealers,Tumkur Rd,Yeshwanthpur Industrial Area,Phase-1,Bengaluru-560022','9341435550'),
+('Indian Oil Petrol Pump','Nelamangala Town','Bangalore','Nelamangala Junction,Kasaba Hobli,Bengaluru-562123','7568901234')
+
+
+--------------------------------------------------
+
+
+insert into Weather_Forecast(w_pincode,w_area,w_city,w_state,day,degree_celsius,humidity)
+values
+('521001','Vij Railway Junction','Vijayawada','Andhra Pradesh','Today','33°C/26°C - Mostly Couldy','55%'),
+('521007','Yanamalakuduru','Vijayawada','Andhra Pradesh','Today','33°C/27°C - Mostly Couldy','46%'),
+('521015','Ajith SinghNagar','Vijayawada','Andhra Pradesh','Today','30°C/24°C - Couldy','11%'),
+('521137','Poranki','Vijayawada','Andhra Pradesh','Today','29°C/24°C - Rainy','56%'),
+('520007','AutoNagar','Vijayawada','Andhra Pradesh','Today','31°C/26°C - Mostly Couldy','31%'),
+('520012','Bhavanipuram','Vijayawada','Andhra Pradesh','Today','36°C/28°C - Mostly Sunny','74%'),
+('520001','OneTown','Vijayawada','Andhra Pradesh','Today','33°C/27°C - Mostly Couldy','56%'),
+('600018','Eldams Road','Chennai','TamilNadu','Today','33°C/26°C - Mostly Couldy','55%'),
+('600083','Ashoknagar','Chennai','TamilNadu','Today','33°C/27°C - Mostly Couldy','46%'),
+('600108','Broadway','Chennai','TamilNadu','Today','30°C/24°C - Couldy','11%'),
+('600010','Kilpauk','Chennai','TamilNadu','Today','29°C/24°C - Rainy','56%'),
+('600001','Chennai','Chennai','TamilNadu','Today','31°C/26°C - Mostly Couldy','31%'),
+('600020','GhandhiNagar','Chennai','TamilNadu','Today','36°C/28°C - Mostly Sunny','74%'),
+('600042','Velachery','Chennai','TamilNadu','Today','33°C/27°C - Mostly Couldy','56%'),
+('560100','Electronic City','Bangalore','Karnataka','Today','33°C/26°C - Mostly Couldy','55%'),
+('562149','Bagalur','Bangalore','Karnataka','Today','33°C/27°C - Mostly Couldy','46%'),
+('560053','Chickpet','Bangalore','Karnataka','Today','30°C/24°C - Couldy','11%'),
+('560048','Inductrial Area','Bangalore','Karnataka','Today','29°C/24°C - Rainy','56%'),
+('560103','Prestige Tech Park','Bangalore','Karnataka','Today','31°C/26°C - Mostly Couldy','31%'),
+('560049','Old Madras Road','Bangalore','Karnataka','Today','36°C/28°C - Mostly Sunny','74%')
+
+
+------------------------------------------------
+
+
+insert into Restaurants(r_name,r_type,r_area,r_city,r_rating,r_address,mobileNumber,available_time)
+values
+('Aromas','veg/NON-veg','Near Benz Circle',' Vijayawada','4','Door No 40-1-47, Dv Manor Hotel, Mg Road, Vijayawada, AP-520010','08666634455','10A.M-10P.M'),
+('Bawarchi','veg/NON-veg','Gayatri Nagar','Vijayawada','4','59-14-3, Gorrepati Complex, Ring Road, Opp Estella College, Vijayawada, AP-520008','088854 44555','11A.M-10P.M'),
+('Barkaas Arabic Restaurant','veg/NON-veg','Benz Circle','Vijayawada','4.5','40-6/2-4, Plot No.31, Above Cherry’s Sweets, 1st Floor,Revenue Colony, Vijayawada, AP-520010','0866 6660003','11A.M-10P.M'),
+('Madhurima Restaurant','veg','Auto Nagar','Vijayawada','3.5','74-15-4, Old Check Post Centre, Krishna Nagar, Vijayawada, AP-5520007','078421 56555','11A.M-10P.M'),   
+('Surabhi Grand','veg/NON-veg','Near Icici Bank','Hyderabad','3.5','2-2-3, 4th Floor, Sreshta Origin, Shivam Road, Hyderabad, TN-500034','040 65402888','11A.M-10P.M'),
+('Bawarchi','veg/NON-veg','Nallakunta','Hyderabad','4.5','Plot 44, RTC Cross Road, Chikkadpally, Opposite Sandhya Theatre, Hyderabad, TN-500044','040 27634490','11A.M-10P.M'),
+('Deccan Chef','veg','Nampally','Hyderabad','4','5-5-511 Mukram Jahi Road, Mozamjahi Market, Hyderabad, TN-500008','098484 21948','11A.M-10P.M'),
+('Madina Hotel','veg/NON-veg','Patherghatti','Hyderabad','3.5','Madina Building, Shop No. 21-1-1040, Madina X Roads, Hyderabad, TN-500044','090520 63454','10A.M-11P.M'),   
+('Hotel Prabha','veg','Kotha Road Junction','Visakhapatnam','4','Nad Kotha Road, Beside Kotha Road Junction, Visakhapatnam, Andhra Pradesh 530027','098492 48624','11A.M-10P.M'),
+('Helapuri Restaurant','veg/NON-veg','Jagadamba Junction','Visakhapatnam','4.5','Ground Floor, Ravi Plaza, Opposite Chitralaya Mall,Andhra Pradesh 530027','096762 24488','11A.M-10P.M'), 
+('Akshaya Restaurant','veg/NON-veg','Dondaparithy','Visakhapatnam','3.5','Opp DRM Office, Station Road, Dondaparithy, Andhra Pradesh 530027','091778 94619','10A.M-11P.M'), 
+('Shree Swastik Family Restaurant','veg','Asilmetta Junction','Visakhapatnam','3.5','9-27-3/2, Rama Talkies Road, Behind Bharat Petrol Bunk, Asilmetta Junction, AP-530027','0891 3592646','10A.M-10P.M'),
+('AnnaLakshmi Family Restaurant','veg','Chetpet',' Chennai','4','No 6, Mayor Ramanathnagar Salai, Spur Tank Road, Chennai, TN-600031','08666634455','10A.M-11P.M'),
+('BASIL WITH A TWIST Restaurant','veg/NON-veg','T.Nagar','Chennai','4.5','58A, Habibullah Road, Chennai, TN-600017','088854 44555','11A.M-09P.M'),
+('The Flying Elephant Restaurant','veg/NON-veg','Velachery','Chennai','5','32-4, Rajbhavan39, Littlemount, guindy, Chennai, TN-600032','0866 6660003','11A.M-10P.M'),
+('LANTERN Restaurant','veg/NON-veg','Ashoknagar',' Bangalore','4.4','99, Residency Road, Shanthalnagar, Bangalore, KN-560025','08666634455','10A.M-10P.M'),
+('Empare Restaurant','veg/NON-veg','Indhira Nagar','Bangalore','3.8','80-25A, 80Ft Road, HAL 2nd Stage, Bangalore, KN-560038','088854 44555','11A.M-10P.M'),
+('JAMAVAR Restaurant','veg','HAL Old airport Rd','Bangalore','4.5','40-6, Lobby Level, The Lela Palace,Bangalore, KN-560008','0866 6660003','11A.M-11:30P.M')
+
+
+------------------------------------------------------
+
+
+insert into Banks(bank_name,branch_name,ifsc_code,bank_city,bank_address,mobileNumber,bank_emailId,available_time)
+values
+('Axis Bank','Vijayawada Main Branch','UTIB0000069','vijayawada','D No.59a 1-7, Gr Flr, Matha Towers Ring Rd, Near Benz Circle, Vijayawada 520001','0866 520008','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','One Town','UTIB0000555','vijayawada','D.no. 11-2-16, First Floor, Opp S.k.p.v.v. School, K.t.road, Kothapet, Vijayawada 520001','0866 2565388','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Eluru Road','UTIB0001413','vijayawada','No. 28-1-10 & 28-5-1, Governorpet, Eluru Road, Vijayawada, Dist.krishna, Andhra Pradesh, Pin 520002','0866 2532454','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Gunadala','UTIB0003443','vijayawada','Door No 44 1 45 1 Rs No 210 4 Ward No 32 Eluru Road Gunadala Vijayawada 520004','866 2469318','axisbank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','Vijayawada','ICIC0006306','vijayawada','D-40-1-52, 5, Sainag Complex, M G Road, Vijayawada.520010','1860 1206699','icicibank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','One Town','ICIC0000303','vijayawada',' 9-61-8, BRP ROAD,VIJAYAWADA 520001','7306693755','axisbank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','Gunadala','ICIC0004246','vijayawada','Icici Bank Ltd Door No 45 1 3 3 Ab Twin Apartments Eluru Road Gunadala Vijayawada Ap 520004','1860 1206699','icicibank@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Poranki','SBIN0011101','vijayawada','D No 13 150, Poranki, Penamakuru Mandal, Krishna Dist Ap 521137','1800 1038181','sbi@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Benz Circle','SBIN0004157','vijayawada','BENZ CICRLESHANTHA PLAZA,OPP.STELLA COLLEGERINGROAD VIJAYVADA 520008','8343537321','sbi@gmail.com','10A.M-5P.M'),
+('Axis Bank','Nijampet','UTIB0002960','Hyderabad','Haritha Complex 31002b Nizampet Quthbullapur Mandal Ranga Reddy District Hyderabad 500090','23893453','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Suncity','UTIB0003306','Hyderabad',' PLOT NO 23, Main Road, Rajendra Nagar, Hyderabad 500008','7895574788','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Malakpet','UTIB0003172','Hyderabad','Sri Vinayaka Spectrum Square 1626742 Ground Floor Beside P Satyanarayan Gems Jewellery Malakpet Hyderabad 500036','9845677855','axisbank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','kothapet','UTIB0007225','Hyderabad','PLOT NO 35, Main Road,ashok nagar po, 6004334','8977334883','icicibank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','kothagudem','UTIB0001769','Hyderabad','Ground Floor Lici- Branch Office Building Hamirpur Road, Sector-19','9984456333','icicibank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','Cyber Towers','UTIB0003892','Hyderabad','Plot no. 5, pearl avenue, tuticorin main road, ktc nagar','9983388833','icicibank@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Ashok Nagar','SBIN0070988','Hyderabad','6b6c, 12th avenue, ashok nagar po, 600083','24717134','sbibank@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Kukatpally','SBIN0032241','Hyderabad','Plot No31 And 32 9th Phase, Gokul X Road, Kphb Colony, Kukatpally, Hyderbad 500085','040 23052234','sbibank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Town Hall','UTIB0001919','coimbatore','No 86, 1, Vairam Street, (vysyalu Street), Coimbatore, Tamil Nadu, Pin 641001','0422 -2396000','axisbank@gmail.com','10A.M-5P.M'),
+('Axis Bank','Singanallur','UTIB0002811','coimbatore','D NO 3032 TRICH ROAD SINGANALLUR 641016','9885543387','axisbank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','Amabattur','ICIC0007313','chennai','Icici bank ltd., 439/8, p.h.road, arumbakkam, chennai - 600106, tamil nadu','9844478332','icicibank@gmail.com','10A.M-5P.M'),
+('ICICI Bank','Mkb Nagar','ICIC0004068','chennai','No 311 west avenue road mkb nagar vysarpadi chennai 39','9894578334','icicibank@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Anna Nagar','SBIN0021094','Chennai','218thstreetannanagarchennai','250 2508500','sbibank@gmail.com','10A.M-5P.M'),
+('State Bank Of India','Park Town','SBIN0001856','Chennai','Chennai, Tamilnadu, Pin 600003','044-25354976','sbibank@gmail.com','10A.M-5P.M')
+
+
+-----------------------------------------------------------
+
+insert into Grocery_Stores(g_name,g_area,g_city,g_rating,g_address,mobileNumber,available_time)
+values 
+('Annaporna Grocery Stores','Near Benz Circle',' Vijayawada','4','Door No 40-1-47, Dv Manor Hotel, Mg Road, Vijayawada, AP-520010','08666634455','10A.M-10P.M'),
+('Venkateswara Grocery Stores','Gayatri Nagar','Vijayawada','4','59-14-3, Gorrepati Complex, Ring Road, Opp Estella College, Vijayawada, AP-520008','088854 44555','11A.M-10P.M'),
+('D-Mart','Ashoke Nagar','Vijayawada','4.5','40-6/2-4, Plot No.31, Above Cherry’s Sweets, 1st Floor,Revenue Colony, , Vijayawada, AP-520010','0866 6660003','11A.M-10P.M'),
+('Ashoke Maruthi Grocery Stores','Auto Nagar','Vijayawada','3.5','74-15-4, Old Check Post Centre, Krishna Nagar, Vijayawada, AP-5520007','078421 56555','11A.M-10P.M'),   
+('Khan Jhani Grocery Stores','Near Icici Bank','Hyderabad','3.5','2-2-3, 4th Floor, Sreshta Origin, Shivam Road, , Hyderabad, TN-500044','040 65402888','11A.M-10P.M'),
+('Sweety Mart Grocery Stores','Nallakunta','Hyderabad','4.5','Plot 44, RTC Cross Road, Chikkadpally, Opposite Sandhya Theatre, Hyderabad, TN-500008','040 27634490','11A.M-10P.M'),
+('Manoj Mart','Nampally','Hyderabad','4','5-5-511 Mukram Jahi Road, Mozamjahi Market, , Hyderabad, TN-500039','098484 21948','11A.M-10P.M'),
+('Vishal Mart','Patherghatti','Hyderabad','3.5','Madina Building, Shop No. 21-1-1040, Madina X Roads, , Hyderabad, TN-500044','090520 63454','10A.M-11P.M'),
+('Lakshmi Shyam Grocery Stores','Chetpet',' Chennai','4','No 6, Mayor Ramanathnagar Salai, Spur Tank Road, Chennai, TN-600031','08666634455','10A.M-11P.M'),
+('Amma Grocery Stores','T.Nagar','Chennai','4.5','58A, Habibullah Road, Chennai, TN-600017','088854 44555','11A.M-09P.M'),
+('Vyshnav Grocery Stores','Velachery','Chennai','5','40-6/2-4, Plot No.31, Above Cherry’s Sweets, 1st Floor,Revenue Colony, Chennai, TN-600034','0866 6660003','11A.M-10P.M'),
+('Anna Maruthi Grocery Stores','Near Benz Circle',' Bangalore','4','Door No 40-1-47, Dv Manor Hotel, Mg Road,  Bangalore, KN-560025','08666634455','10A.M-10P.M'),
+('Narashimha Grocery Stores','Gayatri Nagar','Bangalore','4','59-14-3, Gorrepati Complex, Ring Road, Opp Estella College, Bangalore, KN-560038','088854 44555','11A.M-10P.M'),
+('Ganesh Grocery Stores','HAL Old airport Rd','Bangalore','4.5','40-6/2-4, Plot No.31, Above Cherry’s Sweets, 1st Floor,Revenue Colony, Bangalore, KN-560008','0866 6660003','11A.M-10P.M')
+
+
+
